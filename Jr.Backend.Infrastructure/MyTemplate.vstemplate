@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Jr.Backend.Infrastructure</Name>
+    <Description>
+    </Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Jr.Backend.Infrastructure</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Jr.Backend.Infrastructure.csproj" File="Jr.Backend.Infrastructure.csproj" ReplaceParameters="true">
+      <Folder Name="DependencyInjection" TargetFolderName="DependencyInjection">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ServicesDependency.cs">ServicesDependency.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Entity" TargetFolderName="Entity" />
+      <Folder Name="Interfaces" TargetFolderName="Interfaces" />
+      <Folder Name="Repository" TargetFolderName="Repository" />
+    </Project>
+  </TemplateContent>
+</VSTemplate>

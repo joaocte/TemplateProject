@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\$ext_projectname$.Api\$ext_projectname$.Api.csproj" />
+    <ProjectReference Include="..\$ext_projectname$.Application\$ext_projectname$.Application.csproj" />
+    <ProjectReference Include="..\$ext_projectname$.Domain\$ext_projectname$.Domain.csproj" />
+    <ProjectReference Include="..\$ext_projectname$.Infrastructure\$ext_projectname$.Infrastructure.csproj" />
+    <ProjectReference Include="..\$ext_projectname$.WorkerService\$ext_projectname$.WorkerService.csproj" />
+  </ItemGroup>
+
+</Project>

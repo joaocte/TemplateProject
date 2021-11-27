@@ -1,0 +1,33 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Jr.Backend.Application</Name>
+    <Description>
+    </Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Jr.Backend.Application</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Jr.Backend.Application.csproj" File="Jr.Backend.Application.csproj" ReplaceParameters="true">
+      <Folder Name="AutoMapper" TargetFolderName="AutoMapper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MappingProfileToDomain.cs">MappingProfileToDomain.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MappingProfileToEntity.cs">MappingProfileToEntity.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MappingProfileToEnvent.cs">MappingProfileToEnvent.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DependencyInjection" TargetFolderName="DependencyInjection">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ServicesDependency.cs">ServicesDependency.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Handlers" TargetFolderName="Handlers" />
+      <Folder Name="UseCase" TargetFolderName="UseCase" />
+    </Project>
+  </TemplateContent>
+</VSTemplate>

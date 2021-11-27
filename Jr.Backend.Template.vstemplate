@@ -1,0 +1,42 @@
+﻿<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Jr Backend Solution Template</Name>
+    <Description>Clean Arch Template for Jr Backend Developer</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>JrBackendApplication</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Icon.png</Icon>
+	<LanguageTag>csharp</LanguageTag>
+	<PlatformTag>linux</PlatformTag>
+	<PlatformTag>windows</PlatformTag>
+	<ProjectTypeTag>other</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Api">
+        Jr.Backend.Api\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Application">
+        Jr.Backend.Application\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Domain">
+        Jr.Backend.Domain\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Infrastructure">
+        Jr.Backend.Infrastructure\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.WorkerService">
+        Jr.Backend.WorkerService\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	   <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Tests">
+        Jr.Backend.Tests\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
